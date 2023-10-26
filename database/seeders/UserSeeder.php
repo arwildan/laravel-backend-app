@@ -16,10 +16,14 @@ class UserSeeder extends Seeder
     {
         User::factory(5)->create();
         User::create([
+
             'name' => 'wildan anwarul',
             'email' => 'anwarulwildan@gmail.com',
             'email_verified_at'  => now(),
             'password' => Hash::make('123456'),
+            'role' => 'admin',
+            'phone' => '6285640899224',
+            'bio' => 'flutter dev',
         ]);
     }
 }
